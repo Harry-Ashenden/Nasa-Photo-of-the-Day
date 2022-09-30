@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+     display: flex;
+     height: 100%;
+     width: 100%;
+     color: #ebebeb;
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+     line-height: 1.6;
+     background-image: url(../img/space-bg.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow-y: hidden;
+     font-size: 62.5%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.layout {
+     width: 100%;
+     padding: 1%;
+}
+
+div {
+     width: 100%;
+     align-self: center;
+}
+
+.description {
+     overflow-y: scroll;
+     height: 62%;
+     width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+     display: none;
+   }
+
+.boxStyle {
+     background-color: rgba(51, 51, 51, 0.7);
+     border-radius: 10px;
+     padding: 3%;
+     margin-bottom: 1%;
+}
+
+.fit {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+/* Reducing scroll bar on description to almost nothing */
+     .description::-webkit-scrollbar {
+          width: 5px;
+     }
+
+/* Styling the HTML5 date picker */
+     ::-webkit-datetime-edit { padding: 1.2%;}
+     ::-webkit-datetime-edit {font-size: 2rem;}
+     ::-webkit-calendar-picker-indicator { font-size: 2rem; }
+
+/* Button styling */
+     #button {
+          background-color: #02dbcd;
+          border: none;
+          margin-left: 1rem;
+          color: #000000;
+          padding: 1% 2%;
+          opacity: 0.6;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 2rem;
+          border-radius: 3px;
+     }
+     #button:hover {
+          opacity: 1;
+     }
+
+
+/* Font sizes */
+     header h1 {
+          font-size: 4rem;
+          margin: 0;
+     }
+     header p {
+          font-size: 1.9rem;
+     }
+     .description h3 {
+          font-size: 2.3rem;
+     }
+     .description p {
+          font-size: 1.7rem;
+     }
+
+/******************************************
+/* Responsive Desgin
+/*******************************************/
+
+/* Tablet -changing layout */
+     @media screen and (max-width: 800px) {
+          html, body {
+               display: block;
+               overflow-y: auto;
+          }
+     }
+
+/* Mobile - Adjusting font sizing */
+     @media screen and (max-width: 500px) {
+          header h1 {
+               font-size: 3rem;
+               margin: 0;
+          }
+          header p {
+               font-size: 1.2rem;
+          }
+          .description h3 {
+               font-size: 1.9rem;
+          }
+          .description p {
+               font-size: 1rem;
+          }
+          #button {
+               font-size: 1.2rem;
+          }
+          ::-webkit-datetime-edit {font-size: 1.2rem;}
+     }

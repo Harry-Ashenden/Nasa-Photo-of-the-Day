@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="An API in which you can select a date and the image or video from NASA's website will show">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+		<title>NASA's Photo of the Day</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+        <!-- Title, info and date input -->
+        <section class="layout">
+            <header class="boxStyle">    
+                <h1>NASA Photo of the Day</h1>
+                <p>A place to view the history of NASA's photo's. Just select a date and see some awesome media!</p>
+	    	    <input type="date" name="" value="">
+	    	    <button id="button" type="button" name="button">Get Media</button>
+            </header>
+            <section class="boxStyle description ">
+                <h3>Description</h3>
+                <p id="explanation"></p>
+            </section>
+        </section>
+
+
+        <!-- Media and Explanation -->
+        <section class="layout"> 
+            <img class="hidden fit" src="" alt="">
+            <iframe class="hidden fit" src="" alt=""></iframe>
+        </section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
